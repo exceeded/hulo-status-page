@@ -1,0 +1,77 @@
+name: probe
+
+on:
+  schedule:
+    # Every 5 minutes
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run probe
+        id: probe
+        run: |
+          python3 probe.py | tee /tmp/probe.log
+          if grep -q "overall=False" /tmp/probe.log; then
+            echo "overall_ok=false" >> "$GITHUB_OUTPUT"
+            grep -oP "failing=\K\[[^\]]+\]" /tmp/probe.log | tee /tmp/failing.txt || true
+          else
+            echo "overall_ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit + push data
+        run: |
+          git config user.name "hulo-status-bot"
+          git config user.email "noreply@huloglobal.com"
+          git add data/history.json public/
+          if ! git diff --cached --quiet; then
+            git commit -m "Probe $(date -u +%Y-%m-%dT%H:%M:%SZ)" --quiet
+            git push --quiet
+          fi
+
+      - name: Notify Slack on failure
+        if: steps.probe.outputs.overall_ok == 'false' && env.HULO_SLACK_WEBHOOK != ''
+        env:
+          HULO_SLACK_WEBHOOK: ${{ secrets.HULO_SLACK_WEBHOOK }}
+        run: |
+          FAILING=$(cat /tmp/failing.txt 2>/dev/null || echo '[unknown]')
+          curl -sS -m 10 -X POST -H 'content-type: application/json' \
+            -d "{\"text\":\"🚨 Hulo Global status — failures detected: ${FAILING}\nhttps://status.huloglobal.com\"}" \
+            "$HULO_SLACK_WEBHOOK"
+
+  deploy-pages:
+    needs: probe
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+      - id: deployment
+        uses: actions/deploy-pages@v4
