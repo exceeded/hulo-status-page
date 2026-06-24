@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T13:53:07.008984+00:00",
+  "updated": "2026-06-24T14:53:49.371926+00:00",
   "overall": "All systems operational",
   "overall_ok": true,
   "checks": [
@@ -8,130 +8,130 @@
       "url": "https://huloglobal.com/vendure-plugins/",
       "ok": true,
       "status": 200,
-      "ms": 489,
+      "ms": 585,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.15,
+      "uptime_30d": 98.15
     },
     {
       "name": "Legal \u2014 Terms",
       "url": "https://huloglobal.com/legal/terms/",
       "ok": true,
       "status": 200,
-      "ms": 343,
+      "ms": 549,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.15,
+      "uptime_30d": 98.15
     },
     {
       "name": "Legal \u2014 Privacy",
       "url": "https://huloglobal.com/legal/privacy/",
       "ok": true,
       "status": 200,
-      "ms": 369,
+      "ms": 539,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.15,
+      "uptime_30d": 98.15
     },
     {
       "name": "Buy \u2014 Email Tracking",
       "url": "https://elite.charity/licence/buy/vendure-plugin-email-tracking",
       "ok": true,
       "status": 200,
-      "ms": 645,
+      "ms": 805,
       "err": null,
-      "uptime_24h": 96.23,
-      "uptime_30d": 96.23
+      "uptime_24h": 96.3,
+      "uptime_30d": 96.3
     },
     {
       "name": "Buy \u2014 Geo Block",
       "url": "https://elite.charity/licence/buy/vendure-plugin-geo-block",
       "ok": true,
       "status": 200,
-      "ms": 353,
+      "ms": 500,
       "err": null,
-      "uptime_24h": 96.23,
-      "uptime_30d": 96.23
+      "uptime_24h": 96.3,
+      "uptime_30d": 96.3
     },
     {
       "name": "Buy \u2014 Visitor Analytics",
       "url": "https://elite.charity/licence/buy/vendure-plugin-visitor-analytics",
       "ok": true,
       "status": 200,
-      "ms": 148,
+      "ms": 216,
       "err": null,
-      "uptime_24h": 96.23,
-      "uptime_30d": 96.23
+      "uptime_24h": 96.3,
+      "uptime_30d": 96.3
     },
     {
       "name": "Forgot key",
       "url": "https://elite.charity/licence/forgot",
       "ok": true,
       "status": 200,
-      "ms": 152,
+      "ms": 228,
       "err": null,
-      "uptime_24h": 96.23,
-      "uptime_30d": 96.23
+      "uptime_24h": 96.3,
+      "uptime_30d": 96.3
     },
     {
       "name": "Privacy request",
       "url": "https://elite.charity/licence/privacy",
       "ok": true,
       "status": 200,
-      "ms": 140,
+      "ms": 504,
       "err": null,
-      "uptime_24h": 96.23,
-      "uptime_30d": 96.23
+      "uptime_24h": 96.3,
+      "uptime_30d": 96.3
     },
     {
       "name": "Geo-block presets",
       "url": "https://elite.charity/geo-block/presets",
       "ok": true,
       "status": 200,
-      "ms": 343,
+      "ms": 211,
       "err": null,
-      "uptime_24h": 96.23,
-      "uptime_30d": 96.23
+      "uptime_24h": 96.3,
+      "uptime_30d": 96.3
     },
     {
       "name": "Email-track status",
       "url": "https://elite.charity/email-track/status",
       "ok": true,
       "status": 401,
-      "ms": 346,
+      "ms": 294,
       "err": null,
-      "uptime_24h": 96.23,
-      "uptime_30d": 96.23
+      "uptime_24h": 96.3,
+      "uptime_30d": 96.3
     },
     {
       "name": "Geo-block status",
       "url": "https://elite.charity/geo-block/status",
       "ok": true,
       "status": 401,
-      "ms": 345,
+      "ms": 213,
       "err": null,
-      "uptime_24h": 96.23,
-      "uptime_30d": 96.23
+      "uptime_24h": 96.3,
+      "uptime_30d": 96.3
     },
     {
       "name": "Visitor status",
       "url": "https://elite.charity/ees/visitors/status",
       "ok": true,
       "status": 401,
-      "ms": 141,
+      "ms": 348,
       "err": null,
-      "uptime_24h": 96.23,
-      "uptime_30d": 96.23
+      "uptime_24h": 96.3,
+      "uptime_30d": 96.3
     },
     {
       "name": "Revocation list",
       "url": "https://elite.charity/licence/revoked.json",
       "ok": true,
       "status": 200,
-      "ms": 348,
+      "ms": 234,
       "err": null,
-      "uptime_24h": 96.23,
-      "uptime_30d": 96.23
+      "uptime_24h": 96.3,
+      "uptime_30d": 96.3
     }
   ]
 }
