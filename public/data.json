@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T13:48:53.972707+00:00",
+  "updated": "2026-06-26T14:46:10.494513+00:00",
   "overall": "All systems operational",
   "overall_ok": true,
   "checks": [
@@ -10,118 +10,118 @@
       "status": 200,
       "ms": 511,
       "err": null,
-      "uptime_24h": 99.06,
-      "uptime_30d": 99.06
+      "uptime_24h": 99.07,
+      "uptime_30d": 99.07
     },
     {
       "name": "Legal \u2014 Terms",
       "url": "https://huloglobal.com/legal/terms/",
       "ok": true,
       "status": 200,
-      "ms": 470,
+      "ms": 465,
       "err": null,
-      "uptime_24h": 99.06,
-      "uptime_30d": 99.06
+      "uptime_24h": 99.07,
+      "uptime_30d": 99.07
     },
     {
       "name": "Legal \u2014 Privacy",
       "url": "https://huloglobal.com/legal/privacy/",
       "ok": true,
       "status": 200,
-      "ms": 197,
+      "ms": 469,
       "err": null,
-      "uptime_24h": 99.06,
-      "uptime_30d": 99.06
+      "uptime_24h": 99.07,
+      "uptime_30d": 99.07
     },
     {
       "name": "Buy \u2014 Email Tracking",
       "url": "https://elite.charity/licence/buy/vendure-plugin-email-tracking",
       "ok": true,
       "status": 200,
-      "ms": 789,
+      "ms": 834,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.13,
+      "uptime_30d": 98.13
     },
     {
       "name": "Buy \u2014 Geo Block",
       "url": "https://elite.charity/licence/buy/vendure-plugin-geo-block",
       "ok": true,
       "status": 200,
-      "ms": 484,
+      "ms": 466,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.13,
+      "uptime_30d": 98.13
     },
     {
       "name": "Buy \u2014 Visitor Analytics",
       "url": "https://elite.charity/licence/buy/vendure-plugin-visitor-analytics",
       "ok": true,
       "status": 200,
-      "ms": 461,
+      "ms": 491,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.13,
+      "uptime_30d": 98.13
     },
     {
       "name": "Forgot key",
       "url": "https://elite.charity/licence/forgot",
       "ok": true,
       "status": 200,
-      "ms": 198,
+      "ms": 489,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.13,
+      "uptime_30d": 98.13
     },
     {
       "name": "Privacy request",
       "url": "https://elite.charity/licence/privacy",
       "ok": true,
       "status": 200,
-      "ms": 195,
+      "ms": 201,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.13,
+      "uptime_30d": 98.13
     },
     {
       "name": "Geo-block presets",
       "url": "https://elite.charity/geo-block/presets",
       "ok": true,
       "status": 200,
-      "ms": 184,
+      "ms": 466,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.13,
+      "uptime_30d": 98.13
     },
     {
       "name": "Email-track status",
       "url": "https://elite.charity/email-track/status",
       "ok": true,
       "status": 401,
-      "ms": 190,
+      "ms": 179,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.13,
+      "uptime_30d": 98.13
     },
     {
       "name": "Geo-block status",
       "url": "https://elite.charity/geo-block/status",
       "ok": true,
       "status": 401,
-      "ms": 192,
+      "ms": 467,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.13,
+      "uptime_30d": 98.13
     },
     {
       "name": "Visitor status",
       "url": "https://elite.charity/ees/visitors/status",
       "ok": true,
       "status": 401,
-      "ms": 190,
+      "ms": 178,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.13,
+      "uptime_30d": 98.13
     },
     {
       "name": "Revocation list",
@@ -130,8 +130,8 @@
       "status": 200,
       "ms": 194,
       "err": null,
-      "uptime_24h": 98.11,
-      "uptime_30d": 98.11
+      "uptime_24h": 98.13,
+      "uptime_30d": 98.13
     }
   ]
 }
