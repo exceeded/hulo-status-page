@@ -38,22 +38,48 @@ CHECKS = [
     {'name': 'Geo-block status',        'url': 'https://elite.charity/geo-block/status',                             'expect': 401},
     {'name': 'Visitor status',          'url': 'https://elite.charity/ees/visitors/status',                          'expect': 401},
     {'name': 'Revocation list',         'url': 'https://elite.charity/licence/revoked.json',                         'expect': 200},
+    # Self-check: the status page itself must be publicly reachable at
+    # both the custom domain AND the GitHub Pages URL. If someone puts a
+    # Cloudflare Access rule on the custom domain, the /login.html redirect
+    # would make this check fail — we want to know about it here rather
+    # than have customers report it.
+    {'name': 'Status page — custom domain', 'url': 'https://status.huloglobal.com/',                                 'expect': 200},
+    {'name': 'Status page — Pages URL',     'url': 'https://exceeded.github.io/hulo-status-page/',                   'expect': 200},
 ]
+
+
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    """Refuse to follow redirects so the probe sees the actual status
+    code — otherwise Cloudflare-Access-style login redirects would
+    silently mask endpoints that require authentication."""
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
+_opener = urllib.request.build_opener(_NoRedirect)
 
 
 def probe_one(c):
     start = time.monotonic()
     try:
         req = urllib.request.Request(c['url'], method='GET', headers={'User-Agent': 'HuloStatusBot/1.0'})
-        with urllib.request.urlopen(req, timeout=12) as resp:
+        with _opener.open(req, timeout=12) as resp:
             ms = round((time.monotonic() - start) * 1000)
             status = resp.status
             ok = status == c['expect']
-            return {'ok': ok, 'status': status, 'ms': ms, 'err': None}
+            return {'ok': ok, 'status': status, 'ms': ms, 'err': None if ok else f'HTTP {status}'}
     except urllib.error.HTTPError as e:
         ms = round((time.monotonic() - start) * 1000)
         ok = e.code == c['expect']
-        return {'ok': ok, 'status': e.code, 'ms': ms, 'err': None if ok else f'HTTP {e.code}'}
+        # 3xx is an HTTPError with our NoRedirect handler — surface it
+        # so operators see, e.g., a 302 to /login.html on what should
+        # be a 200 landing page.
+        err = None if ok else (
+            'redirect to login (auth in front of endpoint?)'
+            if e.code in (301, 302, 303, 307, 308)
+            else f'HTTP {e.code}'
+        )
+        return {'ok': ok, 'status': e.code, 'ms': ms, 'err': err}
     except Exception as e:
         ms = round((time.monotonic() - start) * 1000)
         return {'ok': False, 'status': 0, 'ms': ms, 'err': str(e)[:200]}

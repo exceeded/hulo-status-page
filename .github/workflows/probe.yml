@@ -73,5 +73,17 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      # GitHub Pages deployment occasionally returns a transient
+      # "Deployment failed, try again later." — retry twice with a
+      # short backoff before the run is marked failed.
       - id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Retry deploy on transient failure (attempt 2)
+        if: steps.deployment.outcome == 'failure'
+        id: deployment2
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Retry deploy on transient failure (attempt 3)
+        if: steps.deployment.outcome == 'failure' && steps.deployment2.outcome == 'failure'
         uses: actions/deploy-pages@v4
