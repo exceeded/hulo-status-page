@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20T04:50:02.443081+00:00",
+  "updated": "2026-07-20T07:48:21.707156+00:00",
   "overall": "Degraded service",
   "overall_ok": false,
   "checks": [
@@ -8,7 +8,7 @@
       "url": "https://huloglobal.com/vendure-plugins/",
       "ok": true,
       "status": 200,
-      "ms": 740,
+      "ms": 721,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 99.81
@@ -18,7 +18,7 @@
       "url": "https://huloglobal.com/legal/terms/",
       "ok": true,
       "status": 200,
-      "ms": 480,
+      "ms": 485,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 99.81
@@ -28,7 +28,7 @@
       "url": "https://huloglobal.com/legal/privacy/",
       "ok": true,
       "status": 200,
-      "ms": 465,
+      "ms": 198,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 99.81
@@ -38,7 +38,7 @@
       "url": "https://elite.charity/licence/buy/vendure-plugin-email-tracking",
       "ok": true,
       "status": 200,
-      "ms": 720,
+      "ms": 739,
       "err": null,
       "uptime_24h": 99.31,
       "uptime_30d": 99.23
@@ -48,7 +48,7 @@
       "url": "https://elite.charity/licence/buy/vendure-plugin-geo-block",
       "ok": true,
       "status": 200,
-      "ms": 469,
+      "ms": 483,
       "err": null,
       "uptime_24h": 99.31,
       "uptime_30d": 99.23
@@ -58,7 +58,7 @@
       "url": "https://elite.charity/licence/buy/vendure-plugin-visitor-analytics",
       "ok": true,
       "status": 200,
-      "ms": 473,
+      "ms": 205,
       "err": null,
       "uptime_24h": 99.65,
       "uptime_30d": 99.42
@@ -68,7 +68,7 @@
       "url": "https://elite.charity/licence/forgot",
       "ok": true,
       "status": 200,
-      "ms": 236,
+      "ms": 200,
       "err": null,
       "uptime_24h": 99.65,
       "uptime_30d": 99.42
@@ -78,7 +78,7 @@
       "url": "https://elite.charity/licence/privacy",
       "ok": true,
       "status": 200,
-      "ms": 237,
+      "ms": 491,
       "err": null,
       "uptime_24h": 99.31,
       "uptime_30d": 99.23
@@ -88,7 +88,7 @@
       "url": "https://elite.charity/geo-block/presets",
       "ok": true,
       "status": 200,
-      "ms": 466,
+      "ms": 246,
       "err": null,
       "uptime_24h": 99.65,
       "uptime_30d": 99.42
@@ -98,7 +98,7 @@
       "url": "https://elite.charity/email-track/status",
       "ok": true,
       "status": 401,
-      "ms": 235,
+      "ms": 480,
       "err": null,
       "uptime_24h": 99.65,
       "uptime_30d": 99.42
@@ -108,7 +108,7 @@
       "url": "https://elite.charity/geo-block/status",
       "ok": true,
       "status": 401,
-      "ms": 250,
+      "ms": 195,
       "err": null,
       "uptime_24h": 99.65,
       "uptime_30d": 99.42
@@ -118,7 +118,7 @@
       "url": "https://elite.charity/ees/visitors/status",
       "ok": true,
       "status": 401,
-      "ms": 238,
+      "ms": 193,
       "err": null,
       "uptime_24h": 99.65,
       "uptime_30d": 99.42
@@ -128,7 +128,7 @@
       "url": "https://elite.charity/licence/revoked.json",
       "ok": true,
       "status": 200,
-      "ms": 472,
+      "ms": 495,
       "err": null,
       "uptime_24h": 99.65,
       "uptime_30d": 99.42
@@ -138,7 +138,7 @@
       "url": "https://status.huloglobal.com/",
       "ok": false,
       "status": 302,
-      "ms": 614,
+      "ms": 536,
       "err": "redirect to login (auth in front of endpoint?)",
       "uptime_24h": 0.0,
       "uptime_30d": 0.0
@@ -148,7 +148,7 @@
       "url": "https://exceeded.github.io/hulo-status-page/",
       "ok": true,
       "status": 200,
-      "ms": 214,
+      "ms": 309,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 100.0
