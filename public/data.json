@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T18:10:33.232168+00:00",
+  "updated": "2026-08-22T18:48:29.160466+00:00",
   "overall": "All systems operational",
   "overall_ok": true,
   "checks": [
@@ -8,7 +8,7 @@
       "url": "https://huloglobal.com/vendure-plugins/",
       "ok": true,
       "status": 200,
-      "ms": 485,
+      "ms": 655,
       "err": null,
       "uptime_24h": 99.65,
       "uptime_30d": 99.18
@@ -18,7 +18,7 @@
       "url": "https://huloglobal.com/legal/terms/",
       "ok": true,
       "status": 200,
-      "ms": 339,
+      "ms": 464,
       "err": null,
       "uptime_24h": 99.65,
       "uptime_30d": 99.18
@@ -28,7 +28,7 @@
       "url": "https://huloglobal.com/legal/privacy/",
       "ok": true,
       "status": 200,
-      "ms": 343,
+      "ms": 462,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 99.32
@@ -38,9 +38,9 @@
       "url": "https://elite.charity/licence/buy/vendure-plugin-email-tracking",
       "ok": true,
       "status": 200,
-      "ms": 557,
+      "ms": 880,
       "err": null,
-      "uptime_24h": 77.43,
+      "uptime_24h": 77.78,
       "uptime_30d": 89.59
     },
     {
@@ -48,9 +48,9 @@
       "url": "https://elite.charity/licence/buy/vendure-plugin-geo-block",
       "ok": true,
       "status": 200,
-      "ms": 347,
+      "ms": 463,
       "err": null,
-      "uptime_24h": 77.43,
+      "uptime_24h": 77.78,
       "uptime_30d": 89.73
     },
     {
@@ -58,9 +58,9 @@
       "url": "https://elite.charity/licence/buy/vendure-plugin-visitor-analytics",
       "ok": true,
       "status": 200,
-      "ms": 359,
+      "ms": 179,
       "err": null,
-      "uptime_24h": 77.43,
+      "uptime_24h": 77.78,
       "uptime_30d": 89.73
     },
     {
@@ -68,9 +68,9 @@
       "url": "https://elite.charity/licence/forgot",
       "ok": true,
       "status": 200,
-      "ms": 145,
+      "ms": 458,
       "err": null,
-      "uptime_24h": 77.43,
+      "uptime_24h": 77.78,
       "uptime_30d": 89.73
     },
     {
@@ -78,9 +78,9 @@
       "url": "https://elite.charity/licence/privacy",
       "ok": true,
       "status": 200,
-      "ms": 145,
+      "ms": 463,
       "err": null,
-      "uptime_24h": 77.43,
+      "uptime_24h": 77.78,
       "uptime_30d": 89.73
     },
     {
@@ -88,9 +88,9 @@
       "url": "https://elite.charity/geo-block/presets",
       "ok": true,
       "status": 200,
-      "ms": 147,
+      "ms": 462,
       "err": null,
-      "uptime_24h": 77.43,
+      "uptime_24h": 77.78,
       "uptime_30d": 89.73
     },
     {
@@ -98,9 +98,9 @@
       "url": "https://elite.charity/email-track/status",
       "ok": true,
       "status": 401,
-      "ms": 144,
+      "ms": 178,
       "err": null,
-      "uptime_24h": 77.43,
+      "uptime_24h": 77.78,
       "uptime_30d": 89.73
     },
     {
@@ -108,9 +108,9 @@
       "url": "https://elite.charity/geo-block/status",
       "ok": true,
       "status": 401,
-      "ms": 145,
+      "ms": 182,
       "err": null,
-      "uptime_24h": 77.43,
+      "uptime_24h": 77.78,
       "uptime_30d": 89.73
     },
     {
@@ -118,9 +118,9 @@
       "url": "https://elite.charity/ees/visitors/status",
       "ok": true,
       "status": 401,
-      "ms": 350,
+      "ms": 176,
       "err": null,
-      "uptime_24h": 77.43,
+      "uptime_24h": 77.78,
       "uptime_30d": 89.73
     },
     {
@@ -128,9 +128,9 @@
       "url": "https://elite.charity/licence/revoked.json",
       "ok": true,
       "status": 200,
-      "ms": 148,
+      "ms": 173,
       "err": null,
-      "uptime_24h": 77.43,
+      "uptime_24h": 77.78,
       "uptime_30d": 89.73
     },
     {
@@ -138,17 +138,17 @@
       "url": "https://status.huloglobal.com/",
       "ok": true,
       "status": 200,
-      "ms": 379,
+      "ms": 491,
       "err": null,
       "uptime_24h": 100.0,
-      "uptime_30d": 78.49
+      "uptime_30d": 78.63
     },
     {
       "name": "Status page \u2014 Pages URL",
       "url": "https://exceeded.github.io/hulo-status-page/",
       "ok": true,
       "status": 200,
-      "ms": 126,
+      "ms": 125,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 100.0
