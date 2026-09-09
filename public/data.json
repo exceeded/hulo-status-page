@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T09:51:36.617798+00:00",
+  "updated": "2026-09-09T14:00:46.544296+00:00",
   "overall": "Degraded service",
   "overall_ok": false,
   "checks": [
@@ -8,7 +8,7 @@
       "url": "https://huloglobal.com/vendure-plugins/",
       "ok": true,
       "status": 200,
-      "ms": 697,
+      "ms": 573,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 99.12
@@ -18,7 +18,7 @@
       "url": "https://huloglobal.com/legal/terms/",
       "ok": true,
       "status": 200,
-      "ms": 179,
+      "ms": 385,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 99.12
@@ -28,127 +28,127 @@
       "url": "https://huloglobal.com/legal/privacy/",
       "ok": true,
       "status": 200,
-      "ms": 463,
+      "ms": 376,
       "err": null,
       "uptime_24h": 100.0,
-      "uptime_30d": 99.27
+      "uptime_30d": 99.26
     },
     {
       "name": "Buy \u2014 Email Tracking",
       "url": "https://elite.charity/licence/buy/vendure-plugin-email-tracking",
       "ok": false,
       "status": 526,
-      "ms": 735,
+      "ms": 567,
       "err": "HTTP 526",
-      "uptime_24h": 98.96,
-      "uptime_30d": 88.56
+      "uptime_24h": 98.61,
+      "uptime_30d": 88.37
     },
     {
       "name": "Buy \u2014 Geo Block",
       "url": "https://elite.charity/licence/buy/vendure-plugin-geo-block",
       "ok": false,
       "status": 526,
-      "ms": 324,
+      "ms": 256,
       "err": "HTTP 526",
-      "uptime_24h": 98.96,
-      "uptime_30d": 88.56
+      "uptime_24h": 98.61,
+      "uptime_30d": 88.37
     },
     {
       "name": "Buy \u2014 Visitor Analytics",
       "url": "https://elite.charity/licence/buy/vendure-plugin-visitor-analytics",
       "ok": false,
       "status": 526,
-      "ms": 328,
+      "ms": 249,
       "err": "HTTP 526",
-      "uptime_24h": 98.96,
-      "uptime_30d": 88.56
+      "uptime_24h": 98.61,
+      "uptime_30d": 88.37
     },
     {
       "name": "Forgot key",
       "url": "https://elite.charity/licence/forgot",
       "ok": false,
       "status": 526,
-      "ms": 319,
+      "ms": 182,
       "err": "HTTP 526",
-      "uptime_24h": 98.96,
-      "uptime_30d": 88.56
+      "uptime_24h": 98.61,
+      "uptime_30d": 88.37
     },
     {
       "name": "Privacy request",
       "url": "https://elite.charity/licence/privacy",
       "ok": false,
       "status": 526,
-      "ms": 321,
+      "ms": 280,
       "err": "HTTP 526",
-      "uptime_24h": 98.96,
-      "uptime_30d": 88.56
+      "uptime_24h": 98.61,
+      "uptime_30d": 88.37
     },
     {
       "name": "Geo-block presets",
       "url": "https://elite.charity/geo-block/presets",
       "ok": false,
       "status": 526,
-      "ms": 198,
+      "ms": 298,
       "err": "HTTP 526",
-      "uptime_24h": 98.96,
-      "uptime_30d": 88.56
+      "uptime_24h": 98.61,
+      "uptime_30d": 88.37
     },
     {
       "name": "Email-track status",
       "url": "https://elite.charity/email-track/status",
       "ok": false,
       "status": 526,
-      "ms": 314,
+      "ms": 273,
       "err": "HTTP 526",
-      "uptime_24h": 98.96,
-      "uptime_30d": 88.56
+      "uptime_24h": 98.61,
+      "uptime_30d": 88.37
     },
     {
       "name": "Geo-block status",
       "url": "https://elite.charity/geo-block/status",
       "ok": false,
       "status": 526,
-      "ms": 318,
+      "ms": 252,
       "err": "HTTP 526",
-      "uptime_24h": 98.96,
-      "uptime_30d": 88.56
+      "uptime_24h": 98.61,
+      "uptime_30d": 88.37
     },
     {
       "name": "Visitor status",
       "url": "https://elite.charity/ees/visitors/status",
       "ok": false,
       "status": 526,
-      "ms": 272,
+      "ms": 324,
       "err": "HTTP 526",
-      "uptime_24h": 98.96,
-      "uptime_30d": 88.56
+      "uptime_24h": 98.61,
+      "uptime_30d": 88.37
     },
     {
       "name": "Revocation list",
       "url": "https://elite.charity/licence/revoked.json",
       "ok": false,
       "status": 526,
-      "ms": 317,
+      "ms": 254,
       "err": "HTTP 526",
-      "uptime_24h": 98.96,
-      "uptime_30d": 88.56
+      "uptime_24h": 98.61,
+      "uptime_30d": 88.37
     },
     {
       "name": "Status page \u2014 custom domain",
       "url": "https://status.huloglobal.com/",
       "ok": true,
       "status": 200,
-      "ms": 528,
+      "ms": 451,
       "err": null,
       "uptime_24h": 100.0,
-      "uptime_30d": 99.27
+      "uptime_30d": 99.26
     },
     {
       "name": "Status page \u2014 Pages URL",
       "url": "https://exceeded.github.io/hulo-status-page/",
       "ok": true,
       "status": 200,
-      "ms": 151,
+      "ms": 90,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 100.0
