@@ -1,14 +1,14 @@
 {
-  "updated": "2026-09-22T21:41:14.805489+00:00",
-  "overall": "Degraded service",
-  "overall_ok": false,
+  "updated": "2026-09-22T23:50:34.486985+00:00",
+  "overall": "All systems operational",
+  "overall_ok": true,
   "checks": [
     {
       "name": "Marketing site",
       "url": "https://huloglobal.com/vendure-plugins/",
       "ok": true,
       "status": 200,
-      "ms": 754,
+      "ms": 635,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 100.0
@@ -18,7 +18,7 @@
       "url": "https://huloglobal.com/legal/terms/",
       "ok": true,
       "status": 200,
-      "ms": 506,
+      "ms": 370,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 100.0
@@ -28,7 +28,7 @@
       "url": "https://huloglobal.com/legal/privacy/",
       "ok": true,
       "status": 200,
-      "ms": 514,
+      "ms": 388,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 100.0
@@ -36,109 +36,109 @@
     {
       "name": "Buy \u2014 Email Tracking",
       "url": "https://elite.charity/licence/buy/vendure-plugin-email-tracking",
-      "ok": false,
-      "status": 0,
-      "ms": 12187,
-      "err": "The read operation timed out",
+      "ok": true,
+      "status": 200,
+      "ms": 1089,
+      "err": null,
       "uptime_24h": 95.49,
-      "uptime_30d": 95.26
+      "uptime_30d": 95.17
     },
     {
       "name": "Buy \u2014 Geo Block",
       "url": "https://elite.charity/licence/buy/vendure-plugin-geo-block",
-      "ok": false,
-      "status": 0,
-      "ms": 12069,
-      "err": "The read operation timed out",
+      "ok": true,
+      "status": 200,
+      "ms": 360,
+      "err": null,
       "uptime_24h": 95.49,
-      "uptime_30d": 95.26
+      "uptime_30d": 95.17
     },
     {
       "name": "Buy \u2014 Visitor Analytics",
       "url": "https://elite.charity/licence/buy/vendure-plugin-visitor-analytics",
-      "ok": false,
-      "status": 0,
-      "ms": 12048,
-      "err": "The read operation timed out",
+      "ok": true,
+      "status": 200,
+      "ms": 371,
+      "err": null,
       "uptime_24h": 95.49,
-      "uptime_30d": 95.26
+      "uptime_30d": 95.17
     },
     {
       "name": "Forgot key",
       "url": "https://elite.charity/licence/forgot",
-      "ok": false,
-      "status": 0,
-      "ms": 12059,
-      "err": "The read operation timed out",
+      "ok": true,
+      "status": 200,
+      "ms": 377,
+      "err": null,
       "uptime_24h": 95.49,
-      "uptime_30d": 95.26
+      "uptime_30d": 95.17
     },
     {
       "name": "Privacy request",
       "url": "https://elite.charity/licence/privacy",
-      "ok": false,
-      "status": 0,
-      "ms": 12068,
-      "err": "The read operation timed out",
+      "ok": true,
+      "status": 200,
+      "ms": 167,
+      "err": null,
       "uptime_24h": 95.49,
-      "uptime_30d": 95.26
+      "uptime_30d": 95.17
     },
     {
       "name": "Geo-block presets",
       "url": "https://elite.charity/geo-block/presets",
-      "ok": false,
-      "status": 0,
-      "ms": 12059,
-      "err": "The read operation timed out",
+      "ok": true,
+      "status": 200,
+      "ms": 173,
+      "err": null,
       "uptime_24h": 95.83,
-      "uptime_30d": 95.62
+      "uptime_30d": 95.54
     },
     {
       "name": "Email-track status",
       "url": "https://elite.charity/email-track/status",
-      "ok": false,
-      "status": 0,
-      "ms": 12050,
-      "err": "The read operation timed out",
+      "ok": true,
+      "status": 401,
+      "ms": 367,
+      "err": null,
       "uptime_24h": 95.83,
-      "uptime_30d": 95.62
+      "uptime_30d": 95.54
     },
     {
       "name": "Geo-block status",
       "url": "https://elite.charity/geo-block/status",
-      "ok": false,
-      "status": 0,
-      "ms": 12066,
-      "err": "The read operation timed out",
+      "ok": true,
+      "status": 401,
+      "ms": 168,
+      "err": null,
       "uptime_24h": 95.83,
-      "uptime_30d": 95.62
+      "uptime_30d": 95.54
     },
     {
       "name": "Visitor status",
       "url": "https://elite.charity/ees/visitors/status",
-      "ok": false,
-      "status": 0,
-      "ms": 12052,
-      "err": "The read operation timed out",
+      "ok": true,
+      "status": 401,
+      "ms": 164,
+      "err": null,
       "uptime_24h": 95.83,
-      "uptime_30d": 95.62
+      "uptime_30d": 95.54
     },
     {
       "name": "Revocation list",
       "url": "https://elite.charity/licence/revoked.json",
-      "ok": false,
-      "status": 0,
-      "ms": 12069,
-      "err": "The read operation timed out",
+      "ok": true,
+      "status": 200,
+      "ms": 187,
+      "err": null,
       "uptime_24h": 95.49,
-      "uptime_30d": 95.26
+      "uptime_30d": 95.17
     },
     {
       "name": "Status page \u2014 custom domain",
       "url": "https://status.huloglobal.com/",
       "ok": true,
       "status": 200,
-      "ms": 626,
+      "ms": 443,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 100.0
@@ -148,7 +148,7 @@
       "url": "https://exceeded.github.io/hulo-status-page/",
       "ok": true,
       "status": 200,
-      "ms": 152,
+      "ms": 155,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 100.0
