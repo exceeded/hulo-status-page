@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T00:11:15.116982+00:00",
+  "updated": "2026-10-29T05:49:33.570877+00:00",
   "overall": "All systems operational",
   "overall_ok": true,
   "checks": [
@@ -8,7 +8,7 @@
       "url": "https://huloglobal.com/vendure-plugins/",
       "ok": true,
       "status": 200,
-      "ms": 722,
+      "ms": 680,
       "err": null,
       "uptime_24h": 99.31,
       "uptime_30d": 98.77
@@ -18,7 +18,7 @@
       "url": "https://huloglobal.com/legal/terms/",
       "ok": true,
       "status": 200,
-      "ms": 504,
+      "ms": 566,
       "err": null,
       "uptime_24h": 99.31,
       "uptime_30d": 98.77
@@ -28,7 +28,7 @@
       "url": "https://huloglobal.com/legal/privacy/",
       "ok": true,
       "status": 200,
-      "ms": 535,
+      "ms": 584,
       "err": null,
       "uptime_24h": 99.65,
       "uptime_30d": 99.38
@@ -38,9 +38,9 @@
       "url": "https://elite.charity/licence/buy/vendure-plugin-email-tracking",
       "ok": true,
       "status": 200,
-      "ms": 713,
+      "ms": 856,
       "err": null,
-      "uptime_24h": 96.88,
+      "uptime_24h": 97.22,
       "uptime_30d": 99.38
     },
     {
@@ -48,9 +48,9 @@
       "url": "https://elite.charity/licence/buy/vendure-plugin-geo-block",
       "ok": true,
       "status": 200,
-      "ms": 537,
+      "ms": 548,
       "err": null,
-      "uptime_24h": 96.53,
+      "uptime_24h": 96.88,
       "uptime_30d": 98.77
     },
     {
@@ -58,9 +58,9 @@
       "url": "https://elite.charity/licence/buy/vendure-plugin-visitor-analytics",
       "ok": true,
       "status": 200,
-      "ms": 573,
+      "ms": 477,
       "err": null,
-      "uptime_24h": 96.88,
+      "uptime_24h": 97.22,
       "uptime_30d": 99.38
     },
     {
@@ -68,9 +68,9 @@
       "url": "https://elite.charity/licence/forgot",
       "ok": true,
       "status": 200,
-      "ms": 515,
+      "ms": 570,
       "err": null,
-      "uptime_24h": 96.88,
+      "uptime_24h": 97.22,
       "uptime_30d": 99.38
     },
     {
@@ -78,9 +78,9 @@
       "url": "https://elite.charity/licence/privacy",
       "ok": true,
       "status": 200,
-      "ms": 237,
+      "ms": 479,
       "err": null,
-      "uptime_24h": 97.22,
+      "uptime_24h": 97.57,
       "uptime_30d": 100.0
     },
     {
@@ -88,9 +88,9 @@
       "url": "https://elite.charity/geo-block/presets",
       "ok": true,
       "status": 200,
-      "ms": 233,
+      "ms": 264,
       "err": null,
-      "uptime_24h": 97.57,
+      "uptime_24h": 97.92,
       "uptime_30d": 100.0
     },
     {
@@ -98,9 +98,9 @@
       "url": "https://elite.charity/email-track/status",
       "ok": true,
       "status": 401,
-      "ms": 226,
+      "ms": 472,
       "err": null,
-      "uptime_24h": 97.57,
+      "uptime_24h": 97.92,
       "uptime_30d": 100.0
     },
     {
@@ -108,9 +108,9 @@
       "url": "https://elite.charity/geo-block/status",
       "ok": true,
       "status": 401,
-      "ms": 239,
+      "ms": 490,
       "err": null,
-      "uptime_24h": 97.57,
+      "uptime_24h": 97.92,
       "uptime_30d": 100.0
     },
     {
@@ -118,9 +118,9 @@
       "url": "https://elite.charity/ees/visitors/status",
       "ok": true,
       "status": 401,
-      "ms": 212,
+      "ms": 207,
       "err": null,
-      "uptime_24h": 97.57,
+      "uptime_24h": 97.92,
       "uptime_30d": 100.0
     },
     {
@@ -128,9 +128,9 @@
       "url": "https://elite.charity/licence/revoked.json",
       "ok": true,
       "status": 200,
-      "ms": 596,
+      "ms": 544,
       "err": null,
-      "uptime_24h": 96.88,
+      "uptime_24h": 97.22,
       "uptime_30d": 99.38
     },
     {
@@ -138,7 +138,7 @@
       "url": "https://status.huloglobal.com/",
       "ok": true,
       "status": 200,
-      "ms": 616,
+      "ms": 546,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 100.0
@@ -148,7 +148,7 @@
       "url": "https://exceeded.github.io/hulo-status-page/",
       "ok": true,
       "status": 200,
-      "ms": 172,
+      "ms": 141,
       "err": null,
       "uptime_24h": 100.0,
       "uptime_30d": 100.0
