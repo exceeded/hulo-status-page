@@ -28,11 +28,15 @@ CHECKS = [
     {'name': 'Marketing site',          'url': 'https://huloglobal.com/vendure-plugins/',                            'expect': 200},
     {'name': 'Legal — Terms',           'url': 'https://huloglobal.com/legal/terms/',                                'expect': 200},
     {'name': 'Legal — Privacy',         'url': 'https://huloglobal.com/legal/privacy/',                              'expect': 200},
-    {'name': 'Buy — Email Tracking',    'url': 'https://elite.charity/licence/buy/vendure-plugin-email-tracking',    'expect': 200},
-    {'name': 'Buy — Geo Block',         'url': 'https://elite.charity/licence/buy/vendure-plugin-geo-block',         'expect': 200},
-    {'name': 'Buy — Visitor Analytics', 'url': 'https://elite.charity/licence/buy/vendure-plugin-visitor-analytics', 'expect': 200},
-    {'name': 'Forgot key',              'url': 'https://elite.charity/licence/forgot',                               'expect': 200},
-    {'name': 'Privacy request',         'url': 'https://elite.charity/licence/privacy',                              'expect': 200},
+    # The HULO licence pages live on huloglobal.com since 2026-11-04; the old
+    # elite.charity addresses forward there (302 while proving, then 301).
+    {'name': 'Buy — Email Tracking',    'url': 'https://huloglobal.com/licence/buy/vendure-plugin-email-tracking',    'expect': 200},
+    {'name': 'Buy — Geo-block',         'url': 'https://huloglobal.com/licence/buy/vendure-plugin-geo-block',         'expect': 200},
+    {'name': 'Buy — Visitor Analytics', 'url': 'https://huloglobal.com/licence/buy/vendure-plugin-visitor-analytics', 'expect': 200},
+    {'name': 'Forgot key',              'url': 'https://huloglobal.com/licence/forgot',                               'expect': 200},
+    {'name': 'Privacy request',         'url': 'https://huloglobal.com/licence/privacy',                              'expect': 200},
+    {'name': 'Old buy link forwards',   'url': 'https://elite.charity/licence/buy/vendure-plugin-geo-block?plan=monthly',
+     'expect': (301, 302), 'location': 'https://huloglobal.com/licence/buy/vendure-plugin-geo-block?plan=monthly'},
     {'name': 'Geo-block presets',       'url': 'https://elite.charity/geo-block/presets',                            'expect': 200},
     {'name': 'Email-track status',      'url': 'https://elite.charity/email-track/status',                           'expect': 401},
     {'name': 'Geo-block status',        'url': 'https://elite.charity/geo-block/status',                             'expect': 401},
@@ -59,6 +63,17 @@ class _NoRedirect(urllib.request.HTTPRedirectHandler):
 _opener = urllib.request.build_opener(_NoRedirect)
 
 
+def _status_ok(c, status, headers):
+    """`expect` is one status or a tuple of them; a check with `location`
+    (a forward) also needs that exact Location header."""
+    want = c['expect']
+    if status not in (want if isinstance(want, (tuple, list)) else (want,)):
+        return False
+    if c.get('location'):
+        return (headers.get('Location') if headers is not None else None) == c['location']
+    return True
+
+
 def probe_one(c):
     start = time.monotonic()
     try:
@@ -66,19 +81,22 @@ def probe_one(c):
         with _opener.open(req, timeout=12) as resp:
             ms = round((time.monotonic() - start) * 1000)
             status = resp.status
-            ok = status == c['expect']
+            ok = _status_ok(c, status, resp.headers)
             return {'ok': ok, 'status': status, 'ms': ms, 'err': None if ok else f'HTTP {status}'}
     except urllib.error.HTTPError as e:
         ms = round((time.monotonic() - start) * 1000)
-        ok = e.code == c['expect']
+        ok = _status_ok(c, e.code, e.headers)
         # 3xx is an HTTPError with our NoRedirect handler — surface it
         # so operators see, e.g., a 302 to /login.html on what should
         # be a 200 landing page.
-        err = None if ok else (
-            'redirect to login (auth in front of endpoint?)'
-            if e.code in (301, 302, 303, 307, 308)
-            else f'HTTP {e.code}'
-        )
+        if ok:
+            err = None
+        elif c.get('location') and e.code in (301, 302, 303, 307, 308):
+            err = f"HTTP {e.code} to {(e.headers.get('Location') or '?')[:120]} (expected {c['location']})"
+        elif e.code in (301, 302, 303, 307, 308):
+            err = 'redirect to login (auth in front of endpoint?)'
+        else:
+            err = f'HTTP {e.code}'
         return {'ok': ok, 'status': e.code, 'ms': ms, 'err': err}
     except Exception as e:
         ms = round((time.monotonic() - start) * 1000)
